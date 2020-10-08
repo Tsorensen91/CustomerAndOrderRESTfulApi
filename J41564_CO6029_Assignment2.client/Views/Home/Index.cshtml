@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/IndexStyleSheet.css" type="text/css" />
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>
+            
+                <a asp-area="" asp-controller="Customers" asp-action="Index" class="button leftbutton">Customers</a>
+            
+                <a asp-area="" asp-controller="Orders" asp-action="Index" class="button rightbutton">Orders</a>
+            
+
+        </p>
+    </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,33 @@
+﻿@model CustomersViewModel
+@{
+    ViewData["Title"] = "Customers Page";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/tableStyleSheet.css" type="text/css" />
+    <title>Customers</title>
+</head>
+<body>
+    <div class="tablewrapper">
+    <table>
+        <tr>
+            <td> ID </td>
+            <td> Name </td>
+            <td> Address </td>
+        </tr>
+        @foreach (Customer x in Model.CustomerList)
+        {
+            <tr>
+                <td> @x.Id  </td>
+                <td> @x.FullName </td>
+                <td> @x.FullAddress </td>
+            </tr>
+        }
+    </table>
+    </div>
+</body>
+</html>

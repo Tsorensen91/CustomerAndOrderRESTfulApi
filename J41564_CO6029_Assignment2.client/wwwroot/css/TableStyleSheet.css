@@ -1,0 +1,17 @@
+﻿td {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 15px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+tr {
+    margin: 20px;
+}
+.tablewrapper {
+    overflow-y: scroll;
+    max-height: 84vh;
+}

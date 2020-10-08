@@ -1,0 +1,33 @@
+﻿@model OrdersViewModel
+@{
+    ViewData["Title"] = "Orders Page";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/tableStyleSheet.css" type="text/css"/>
+    <title>Orders</title>
+</head>
+<body>
+    <div class="tablewrapper">
+        <table>
+            <tr>
+                <td> Order ID </td>
+                <td> <p> Customer ID </td>
+                <td> <p> Order Total </td>
+            </tr>
+            @foreach (Order x in Model.OrderList)
+            {
+                <tr>
+                    <td> @x.OrderId </td>
+                    <td> @x.CustomerId</td>
+                    <td>@decimal.Round(x.OrderTotal, 2) </td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
